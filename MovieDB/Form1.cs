@@ -131,7 +131,7 @@ namespace MovieDB
                     else
                     {
                         MessageBox.Show(yr.ToString());
-                        SQLString = "INSERT INTO movie(Title, Director, Actors,Rating) VALUES('" + name.Replace("'", "''") + "','" + director + "','" + actors + "'," + yr + ",;";
+                        SQLString = "INSERT INTO movie(Title, Director, Actors,Ratings) VALUES('" + name.Replace("'", "''") + "','" + director + "','" + actors + "'," + yr + ",;";
                     }
 
 
