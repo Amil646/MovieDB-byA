@@ -29,7 +29,7 @@ namespace MovieDB
                 database = new OleDbConnection(connectionString);
                 database.Open();
                 //SQL query to list movies
-                string queryString = "SELECT movieID, Title, Publisher, Previewed, MovieYear, Type FROM movie,movieType WHERE movietype.typeID = movie.typeID";
+                string queryString = "SELECT movieID, Title, Director, Actors, Ratings, Type FROM movie;
                 loadDataGrid(queryString);
             }
             catch (Exception ex)
